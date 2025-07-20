@@ -1,0 +1,81 @@
+.controls {
+  display: flex;
+  align-content: center;
+  margin-bottom: 32px;
+  gap: 8px;
+}
+
+#datetime-picker {
+  width: 272px;
+  height: 40px;
+  padding: 16px 8px;
+  opacity: 1;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+#datetime-picker:hover {
+  border-color: #000000;
+}
+
+#datetime-picker:focus {
+  outline: none;
+  border-color: #4e75ff;
+}
+
+button[data-start] {
+  width: 75px;
+  height: 40px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: Medium;
+  line-height: 24px;
+  letter-spacing: 4%;
+  background-color: #cfcfcf;
+  color: #989898;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  gap: 10px;
+}
+
+button[data-start]:hover:not(:disabled) {
+  background-color: #6c8cff;
+  color: #fff;
+}
+
+.timer {
+  width: 346px;
+  height: 72px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4%;
+  color: #2e2f42;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2e2f42;
+}
+
+.flatpickr-day.today:not(.selected) {
+  border: 1px solid #4e75ff;
+  border-radius: 50%;
+}
